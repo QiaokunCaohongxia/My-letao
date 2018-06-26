@@ -12,7 +12,9 @@ ul {
 .red {
   color: #A94442;
 }
-
+.mb_20 {
+  margin-top:20px;
+}
 .body_bg {
   background-color: #222D32;
 }
@@ -125,12 +127,17 @@ ul {
 .lt_main .breadcrumb {
   margin-top: 20px;
 }
+
 .echarts .echarts_1,
 .echarts .echarts_2 {
   width: 48%;
   height: 400px;
 }
 
-
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
+}
 
 
