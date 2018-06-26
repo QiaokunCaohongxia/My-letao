@@ -37,7 +37,7 @@ $(function() {
           // 当前第几页
           currentPage: info.page,
           // 配置按钮点击事件, page 表示当前点击的页码
-          onPageClicked(a, b, c, page) {
+          onPageClicked:function (a, b, c, page) {
             console.log( page );
             // 更新当前页
             currentPage = page;
