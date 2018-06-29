@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--<a href="#">333333</a>-->
+<!--<a href="javascript:history.go(-1);">1212121</a>-->
+<script>
+//  localStorage.setItem("name","zs");
+//  console.log(localStorage.getItem("name"));;
+//  localStorage.setItem("age",18);
+//  localStorage.removeItem("name");
+//  localStorage.clear();
+//  localStorage.setItem("name","qk");
+//  localStorage.setItem("age",24);
+//  console.log(localStorage.getItem("name"));
+//  localStorage.clear();
+//  var obj = {
+//    name : "zs",
+//    age : 15
+//  }
+//  localStorage.setItem("start",JSON.stringify(obj));
+      function getSearchURL() {
+          var search = location.search;
+          search = search.slice(1);
+          var arr = search.split("&");
+          var obj = {};
+          arr.forEach(function (ele) {
+              var key = ele.split("=")[0];
+              var value = ele.split("=")[1];
+              obj[key] = value;
+          })
+        return obj;
+      }
+    
+    console.log(getSearchURL());;
+</script>
+</body>
+</html>
