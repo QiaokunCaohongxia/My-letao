@@ -9,29 +9,3 @@
 .lt_main .lt_nav li a {
   display: block;
 }
-.lt_main .lt_product {
-  padding:10px;
-}
-.lt_main .lt_product li {
-  float: left;
-  width: 48%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom:10px;
-}
-.lt_main .lt_product li:nth-child(odd) {
-  margin-right:4%;
-}
-.lt_main .lt_product li a {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-}
-.lt_main .lt_product li a .oldPrice {
-  text-decoration: line-through;
-}
-.lt_main .lt_product li a .price {
-  color: red;
-}

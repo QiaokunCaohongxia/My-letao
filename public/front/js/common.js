@@ -12,3 +12,20 @@
     indicators: false,
   });
 });
+
+
+function getSearch(name) {
+    var str = location.search;
+    str = decodeURI(str);
+    str = str.slice(1);
+    var arr = str.split("&");
+    var obj = {};
+    arr.forEach(function (ele) {
+        var key = ele.split("=")[0];
+        var value = ele.split("=")[1];
+        obj[key] = value;
+    });
+    return obj[name];
+}
+
+
